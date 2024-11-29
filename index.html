@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Comentários</title>
+</head>
+<body>
+    <h1>Deixe seu comentário</h1>
+    <form action="/salvar_comentario" method="POST">
+        <label for="comentario">Comentário:</label>
+        <textarea name="comentario" id="comentario" rows="4" cols="50"></textarea>
+        <br>
+        <button type="submit">Enviar</button>
+    </form>
+
+    <h2>Comentários:</h2>
+    <div id="comentarios">
+        <!-- Comentários enviados são exibidos aqui -->
+        <p><strong>Usuário 1:</strong> <script>alert('XSS');</script></p>
+        <p><strong>Usuário 2:</strong> Este é um comentário normal.</p>
+    </div>
+</body>
+</html>
